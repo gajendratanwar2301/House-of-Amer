@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="House of Amer Haveli — A royal heritage stay near Amer Fort, Jaipur. Experience Rajput grandeur with timeless grace.">
+  <title>House of Amer Haveli — Jaipur</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel:wght@400;500&family=Raleway:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="nav-logo">House of <span>Amer</span></a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#story" onclick="closeNav()">Our Story</a></li>
+      <li><a href="#rooms" onclick="closeNav()">Rooms</a></li>
+      <li><a href="#dining" onclick="closeNav()">Dining</a></li>
+      <li><a href="#experiences" onclick="closeNav()">Experiences</a></li>
+      <li><a href="#gallery" onclick="closeNav()">Gallery</a></li>
+    </ul>
+    <a href="#book" class="nav-book">Reserve a Stay</a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg" id="hero-bg"></div>
+    <div class="hero-ornament"></div>
+    <div class="hero-content">
+      <div class="hero-tag">Since 1847 &nbsp;·&nbsp; Amer, Jaipur</div>
+      <h1 class="hero-title">House of<br><em>Amer</em></h1>
+      <p class="hero-subtitle">Where Rajput Grandeur Meets Timeless Grace</p>
+      <div class="hero-cta">
+        <a href="#book" class="btn-primary">Book Your Stay</a>
+        <a href="#story" class="btn-secondary">Discover More</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- INTRO STATS -->
+  <div class="intro">
+    <div class="intro-stat"><strong>12</strong><span>Heritage Rooms</span></div>
+    <div class="intro-sep"></div>
+    <div class="intro-stat"><strong>175+</strong><span>Years of History</span></div>
+    <div class="intro-sep"></div>
+    <div class="intro-stat"><strong>2 km</strong><span>From Amer Fort</span></div>
+    <div class="intro-sep"></div>
+    <div class="intro-stat"><strong>5★</strong><span>Royal Experience</span></div>
+  </div>
+
+  <!-- STORY -->
+  <section class="story" id="story">
+    <div class="story-image reveal">
+      <img id="story-img" src="" alt="" loading="lazy">
+      <div class="story-image-border"></div>
+    </div>
+    <div class="story-content">
+      <p class="section-label reveal">Our Heritage</p>
+      <h2 class="section-title reveal">The <em>Living Legend</em><br>of Amer</h2>
+      <div class="ornament-divider reveal">
+        <div class="diamond"></div>
+      </div>
+      <blockquote class="story-quote reveal reveal-delay-1">
+        "Built in the court of the Kachwaha dynasty, every stone wall whispers centuries of royal stories."
+      </blockquote>
+      <p class="section-body reveal reveal-delay-2">
+        Nestled in the shadow of the magnificent Amer Fort, our haveli has stood witness to Maharajas, poets, and
+        wanderers for over a century and a half. Each hand-carved <em>jharokha</em>, each latticed corridor, each
+        sun-drenched courtyard carries the soul of Rajputana — restored with reverence, offered with warmth.
+      </p>
+      <br>
+      <a href="#rooms" class="btn-secondary reveal reveal-delay-3">Explore Our Rooms</a>
+    </div>
+  </section>
+
+  <!-- ROOMS -->
+  <section class="rooms" id="rooms">
+    <div class="rooms-intro">
+      <p class="section-label reveal">Accommodations</p>
+      <h2 class="section-title reveal">Royal <em>Chambers</em> &amp; Suites</h2>
+      <p class="section-body reveal reveal-delay-1">
+        Each room is a curated universe of heritage — handwoven fabrics, antique furnishings, and views that sweep
+        across the Aravalli hills.
+      </p>
+    </div>
+    <!-- Rooms are rendered here by photos.js -->
+    <div class="rooms-grid reveal" id="rooms-grid"></div>
+  </section>
+
+  <!-- DINING -->
+  <section class="dining" id="dining">
+    <div class="dining-bg" id="dining-bg"></div>
+    <div class="dining-inner">
+      <div>
+        <p class="section-label reveal">Culinary Heritage</p>
+        <h2 class="section-title reveal">Flavours of the<br><em>Royal Kitchen</em></h2>
+        <div class="ornament-divider reveal" style="justify-content:flex-start; padding-left: 0;">
+          <div class="diamond"></div>
+        </div>
+        <p class="section-body reveal reveal-delay-1">
+          Our kitchens carry the legacy of Rajput royal banquets. From slow-cooked laal maas to saffron-kissed phirni,
+          every dish is a ceremony. Dine under open skies in our haveli courtyard or in the intimate lamp-lit zenana
+          hall.
+        </p>
+      </div>
+      <div class="dining-items reveal reveal-delay-1">
+        <div class="dining-item">
+          <h4>Sheesh Mahal Dining Hall</h4>
+          <p>Evening dinners beneath glittering mirror-work ceilings — traditional Rajasthani thalis with live folk
+            music.</p>
+        </div>
+        <div class="dining-item">
+          <h4>The Courtyard</h4>
+          <p>Al fresco breakfast and high tea beside the central fountain, surrounded by marigolds and jasmine.</p>
+        </div>
+        <div class="dining-item">
+          <h4>Amer Bar &amp; Lounge</h4>
+          <p>Sundowner cocktails and artisan chai, served with sweeping views of the illuminated fort at dusk.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCES -->
+  <section class="experiences" id="experiences">
+    <div style="text-align:center; max-width: 600px; margin: 0 auto;">
+      <p class="section-label reveal">Curated Moments</p>
+      <h2 class="section-title reveal">Bespoke <em>Experiences</em></h2>
+      <p class="section-body reveal reveal-delay-1" style="margin: 0 auto;">
+        At House of Amer Haveli, we do not offer amenities — we offer memories that stay with you for a lifetime.
+      </p>
+    </div>
+    <div class="exp-grid">
+      <div class="exp-card reveal">
+        <div class="exp-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+            <polyline points="9 22 9 12 15 12 15 22" />
+          </svg>
+        </div>
+        <h4>Heritage Walk</h4>
+        <p>Guided walks through the haveli's secret chambers, stables, and rooftop battlements.</p>
+      </div>
+      <div class="exp-card reveal reveal-delay-1">
+        <div class="exp-icon">
+          <svg viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="10" />
+            <path d="M12 8v4l3 3" />
+          </svg>
+        </div>
+        <h4>Sunrise Elephant Ride</h4>
+        <p>Ascend to Amer Fort on royal elephant back as the sun rises over the Aravalli hills.</p>
+      </div>
+      <div class="exp-card reveal reveal-delay-2">
+        <div class="exp-icon">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+          </svg>
+        </div>
+        <h4>Ayurvedic Rituals</h4>
+        <p>Ancient royal spa treatments — warm oil therapies, rose-petal baths, and saffron face rituals.</p>
+      </div>
+      <div class="exp-card reveal reveal-delay-3">
+        <div class="exp-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+            <circle cx="12" cy="10" r="3" />
+          </svg>
+        </div>
+        <h4>Pink City Tours</h4>
+        <p>Private guided tours of Jaipur's gems — bazaars, Hawa Mahal, and City Palace.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery" id="gallery">
+    <div style="text-align:center; max-width: 600px; margin: 0 auto;">
+      <p class="section-label reveal">Visual Story</p>
+      <h2 class="section-title reveal">The <em>Amer Haveli</em> in Light</h2>
+    </div>
+    <!-- Gallery photos are rendered here by photos.js -->
+    <div class="gallery-grid reveal" id="gallery-grid"></div>
+  </section>
+
+  <!-- TESTIMONIAL -->
+  <section class="testimonial">
+    <p class="section-label reveal">Guest Reflections</p>
+    <div class="testimonial-slider">
+      <div class="tslide active">
+        <div class="stars">★ ★ ★ ★ ★</div>
+        <blockquote class="testimonial-quote">
+          "Staying at House of Amer Haveli was like living inside a painting. Every corner, every meal, every sunrise
+          from our terrace felt like the Maharaja himself had invited us home."
+        </blockquote>
+        <p class="testimonial-author">— Priya &amp; Arjun Malhotra, Mumbai</p>
+      </div>
+      <div class="tslide">
+        <div class="stars">★ ★ ★ ★ ★</div>
+        <blockquote class="testimonial-quote">
+          "The most enchanting stay of our lives. The rooftop view of Amer Fort at dawn, the saffron-scented corridors,
+          the folk music at dinner — pure magic."
+        </blockquote>
+        <p class="testimonial-author">— James &amp; Sophia Whitmore, London</p>
+      </div>
+      <div class="tslide">
+        <div class="stars">★ ★ ★ ★ ★</div>
+        <blockquote class="testimonial-quote">
+          "Not a hotel — a time machine. We arrived as tourists and left feeling like we had lived a royal life. Every
+          detail is thought through with immense love."
+        </blockquote>
+        <p class="testimonial-author">— Aditya Kapoor, New Delhi</p>
+      </div>
+    </div>
+    <div class="tslide-dots">
+      <button class="tdot active" onclick="goSlide(0)"></button>
+      <button class="tdot" onclick="goSlide(1)"></button>
+      <button class="tdot" onclick="goSlide(2)"></button>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" id="book">
+    <div class="cta-bg-text">AMER</div>
+    <p class="section-label reveal">Reserve Your Stay</p>
+    <h2 class="section-title reveal" style="max-width: 560px; margin-left: auto; margin-right: auto;">Begin Your
+      <em>Royal Story</em> Today
+    </h2>
+    <p class="section-body reveal reveal-delay-1" style="margin-left: auto; margin-right: auto;">
+      Limited rooms, timeless memories. Let our royal concierge craft every detail of your sojourn at Amer.
+    </p>
+    <br><br>
+    <a href="mailto:reservations@houseofamerhaveli.com" class="btn-primary reveal reveal-delay-2">Request a
+      Reservation</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div>
+      <div class="footer-brand">House of Amer <span>Haveli</span></div>
+      <p>Near Amer Fort Road, Amer,<br>Jaipur – 302028, Rajasthan, India</p>
+      <br>
+      <p>+91 141 263 0000</p>
+      <a href="mailto:stay@houseofamerhaveli.com">stay@houseofamerhaveli.com</a>
+    </div>
+    <div>
+      <h5>Explore</h5>
+      <a href="#story">Our Heritage</a>
+      <a href="#rooms">Rooms &amp; Suites</a>
+      <a href="#dining">Dining</a>
+      <a href="#experiences">Experiences</a>
+      <a href="#gallery">Gallery</a>
+    </div>
+    <div>
+      <h5>Services</h5>
+      <a href="#">Weddings &amp; Events</a>
+      <a href="#">Spa &amp; Wellness</a>
+      <a href="#">Airport Transfer</a>
+      <a href="#">Concierge</a>
+    </div>
+    <div>
+      <h5>Connect</h5>
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+      <a href="#">TripAdvisor</a>
+      <a href="#">LinkedIn</a>
+    </div>
+    <div class="footer-bottom" style="grid-column: 1 / -1;">
+      <span>© 2026 House of Amer Haveli. All rights reserved.</span>
+      <span>Crafted with love in Jaipur, Rajasthan</span>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <span class="lightbox-close" id="lightbox-close">✕</span>
+    <img src="" alt="" id="lightbox-img">
+  </div>
+
+  <!-- Photos Config (edit photos.js to change images) -->
+  <script src="photos.js"></script>
+
+  <script>
+    // Reveal on scroll
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+    }, { threshold: 0.12 });
+    reveals.forEach(el => observer.observe(el));
+
+    // Nav scroll effect
+    window.addEventListener('scroll', () => {
+      const nav = document.querySelector('nav');
+      nav.style.background = window.scrollY > 60 ? 'rgba(253,248,240,0.97)' : 'rgba(253,248,240,0.92)';
+      nav.style.boxShadow = window.scrollY > 60 ? '0 2px 24px rgba(201,168,76,0.1)' : 'none';
+    });
+
+    // Mobile nav
+    function toggleNav() { document.getElementById('nav-links').classList.toggle('open'); }
+    function closeNav() { document.getElementById('nav-links').classList.remove('open'); }
+
+    // Lightbox close controls
+    document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+    document.getElementById('lightbox').addEventListener('click', e => { if (e.target === document.getElementById('lightbox')) closeLightbox(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    // Testimonial slider
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.tslide');
+    const dots = document.querySelectorAll('.tdot');
+    function goSlide(n) {
+      slides[currentSlide].classList.remove('active');
+      dots[currentSlide].classList.remove('active');
+      currentSlide = n;
+      slides[currentSlide].classList.add('active');
+      dots[currentSlide].classList.add('active');
+    }
+    setInterval(() => goSlide((currentSlide + 1) % slides.length), 5000);
+  </script>
+
+</body>
+
+</html>
