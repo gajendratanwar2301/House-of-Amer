@@ -25,7 +25,7 @@
       <li><a href="#experiences" onclick="closeNav()">Experiences</a></li>
       <li><a href="#gallery" onclick="closeNav()">Gallery</a></li>
     </ul>
-    <a href="#book" class="nav-book">Reserve a Stay</a>
+    <a href="#" class="nav-book" onclick="event.preventDefault(); document.getElementById('enquiry-modal').classList.add('active');">Enquiry Now</a>
     <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" onclick="toggleNav()">
       <span></span><span></span><span></span>
     </button>
@@ -40,7 +40,7 @@
       <h1 class="hero-title">House of<br><em>Amer</em></h1>
       <p class="hero-subtitle">Where Rajput Grandeur Meets Timeless Grace</p>
       <div class="hero-cta">
-        <a href="#book" class="btn-primary">Book Your Stay</a>
+        <a href="#" class="btn-primary" onclick="event.preventDefault(); document.getElementById('enquiry-modal').classList.add('active');">Book Your Stay</a>
         <a href="#story" class="btn-secondary">Discover More</a>
       </div>
     </div>
@@ -131,6 +131,9 @@
           <p>Sundowner cocktails and artisan chai, served with sweeping views of the illuminated fort at dusk.</p>
         </div>
       </div>
+      <div style="margin-top: 2.5rem; text-align: left;">
+        <a href="#" class="btn-primary reveal reveal-delay-2" onclick="event.preventDefault(); document.getElementById('enquiry-modal').classList.add('active');">Enquiry Now</a>
+      </div>
     </div>
   </section>
 
@@ -184,6 +187,9 @@
         <h4>Pink City Tours</h4>
         <p>Private guided tours of Jaipur's gems — bazaars, Hawa Mahal, and City Palace.</p>
       </div>
+    </div>
+    <div style="text-align:center; margin-top: 4rem;">
+      <a href="#" class="btn-primary reveal" onclick="event.preventDefault(); document.getElementById('enquiry-modal').classList.add('active');">Check Availability</a>
     </div>
   </section>
 
@@ -244,8 +250,7 @@
       Limited rooms, timeless memories. Let our royal concierge craft every detail of your sojourn at Amer.
     </p>
     <br><br>
-    <a href="mailto:reservations@houseofamerhaveli.com" class="btn-primary reveal reveal-delay-2">Request a
-      Reservation</a>
+    <a href="#" class="btn-primary reveal reveal-delay-2" onclick="event.preventDefault(); document.getElementById('enquiry-modal').classList.add('active');">Contact Now</a>
   </section>
 
   <!-- FOOTER -->
@@ -290,6 +295,35 @@
     <span class="lightbox-close" id="lightbox-close">✕</span>
     <img src="" alt="" id="lightbox-img">
   </div>
+
+  <!-- ENQUIRY MODAL -->
+  <div class="enquiry-modal" id="enquiry-modal">
+    <div class="modal-content">
+      <span class="modal-close" onclick="document.getElementById('enquiry-modal').classList.remove('active')">&times;</span>
+      <h3>Book Your Stay</h3>
+      <p>Fill out the details below and we will get back to you shortly.</p>
+      <form class="enquiry-form" onsubmit="event.preventDefault(); alert('Thank you! Your enquiry has been sent.'); document.getElementById('enquiry-modal').classList.remove('active');">
+        <div class="form-group">
+          <input type="text" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <input type="tel" placeholder="Mobile Number" required>
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Required Dates (e.g. 12-14 Nov) / Requirement" required>
+        </div>
+        <div class="form-group">
+          <textarea placeholder="Short Message (Optional)" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Submit Enquiry</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- WHATSAPP FLOATING BUTTON -->
+  <a href="https://wa.me/919999999999?text=Hello,%20I%20would%20like%20to%20enquire%20about%20a%20booking." target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.031 21.662a9.664 9.664 0 0 1-4.945-1.353l-.355-.21-3.665.96.977-3.571-.23-.367a9.61 9.61 0 0 1-1.472-5.093c0-5.327 4.342-9.663 9.68-9.663 2.583 0 5.011 1.006 6.837 2.835A9.638 9.638 0 0 1 21.71 12.03c0 5.328-4.341 9.66-9.679 9.632zm0-17.7C7.625 3.962 4.04 7.541 4.04 11.96c0 1.411.368 2.788 1.066 3.998l-1.644 6.012 6.155-1.614a9.605 9.605 0 0 0 4.414 1.077h.004c4.407 0 7.994-3.58 7.994-7.993a8.031 8.031 0 0 0-2.342-5.656 7.986 7.986 0 0 0-5.656-2.34l-.004-.002z" fill="#fff"/><path d="M16.368 13.56c-.22-.11-1.306-.644-1.508-.718-.202-.074-.35-.11-.497.11-.148.22-.572.718-.701.865-.13.148-.258.166-.479.055-.22-.11-.933-.344-1.776-1.096-.657-.585-1.1-1.307-1.23-1.528-.13-.22-.014-.339.096-.449.098-.098.22-.258.33-.387.11-.13.148-.22.22-.368.074-.148.037-.276-.018-.386-.055-.11-.497-1.198-.68-1.64-.179-.434-.36-.375-.497-.382-.13-.006-.277-.008-.424-.008s-.386.055-.589.276c-.202.22-.772.754-.772 1.84s.79 2.133.901 2.28c.11.148 1.554 2.37 3.764 3.325.527.226.938.362 1.257.464.529.168 1.01.144 1.393.087.428-.063 1.306-.533 1.49-1.048.184-.515.184-.956.13-1.048-.055-.092-.203-.148-.423-.258z" fill="#fff"/></svg>
+  </a>
 
   <!-- Photos Config (edit photos.js to change images) -->
   <script src="photos.js"></script>

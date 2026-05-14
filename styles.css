@@ -596,6 +596,68 @@ footer a:hover { color: var(--gold-light); }
   background: var(--text-dark); transition: all 0.3s;
 }
 
+/* ── ENQUIRY MODAL ── */
+.enquiry-modal {
+  display: none; position: fixed; inset: 0; z-index: 1000;
+  background: rgba(0,0,0,0.8);
+  align-items: center; justify-content: center;
+  backdrop-filter: blur(5px);
+}
+.enquiry-modal.active { display: flex; animation: fadeIn 0.3s ease; }
+.modal-content {
+  background: var(--cream);
+  padding: 3rem;
+  border-radius: 4px;
+  width: 90%; max-width: 500px;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+  border: 1px solid var(--gold);
+}
+.modal-close {
+  position: absolute; top: 1.5rem; right: 1.5rem;
+  font-size: 1.5rem; color: var(--text-mid);
+  cursor: pointer; transition: color 0.3s;
+  line-height: 1;
+}
+.modal-close:hover { color: var(--gold); }
+.modal-content h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.2rem; font-weight: 400; color: var(--text-dark);
+  margin-bottom: 0.5rem; text-align: center;
+}
+.modal-content p {
+  font-size: 0.8rem; color: var(--text-muted); text-align: center; margin-bottom: 2rem;
+}
+.enquiry-form { display: flex; flex-direction: column; gap: 1.2rem; }
+.form-group input, .form-group textarea {
+  width: 100%; padding: 0.8rem 1rem;
+  border: 1px solid var(--border);
+  background: var(--ivory);
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.85rem; color: var(--text-dark);
+  outline: none; transition: border-color 0.3s;
+}
+.form-group input:focus, .form-group textarea:focus { border-color: var(--gold); }
+.form-group textarea { resize: vertical; min-height: 100px; }
+.enquiry-form .btn-primary { width: 100%; text-align: center; border: none; cursor: pointer; }
+
+/* ── WHATSAPP BUTTON ── */
+.whatsapp-float {
+  position: fixed; bottom: 2rem; right: 2rem; z-index: 990;
+  width: 60px; height: 60px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+}
+.whatsapp-float:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.5);
+}
+.whatsapp-float svg { width: 35px; height: 35px; fill: white; }
+
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
   nav { padding: 1rem 1.5rem; }
